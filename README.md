@@ -1,6 +1,8 @@
 # MemoryBox
 This repo  is for a Memory Box made with an Arduino Uno, RFID reader RFID-RC522 and DFPlayer Mini.
 
+## This code has been edited by ChatGPT
+
 ***Not for use in Commercial Purposes for ANY reason. Do NOT make money off my hard work.***
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -13,11 +15,11 @@ This repo  is for a Memory Box made with an Arduino Uno, RFID reader RFID-RC522 
 - Arduino IDE and C/C++
 
 ## Libraries used are
-MFRC522v2
-MFRC522DriverSPI
-MFRC522DriverI2C.h
-MFRC522DriverPinSimple
-MFRC522Debug
+- MFRC522v2
+- MFRC522DriverSPI
+- MFRC522DriverI2C.h
+- MFRC522DriverPinSimple
+- MFRC522Debug
 
 ## Future Updates
 - Playing songs based on UID
