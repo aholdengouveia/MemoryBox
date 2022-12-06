@@ -12,14 +12,14 @@ This repo  is for a Memory Box made with an Arduino Uno, RFID reader RFID-RC522 
 ## Built With
 - Arduino IDE and C/C++
 
-##Libraries used are
+## Libraries used are
 MFRC522v2
 MFRC522DriverSPI
 MFRC522DriverI2C.h
 MFRC522DriverPinSimple
 MFRC522Debug
 
-##Future Updates
+## Future Updates
 - Playing songs based on UID
 - Being able to show text documents on a screen
 - Starting list of audio files
