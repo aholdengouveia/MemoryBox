@@ -28,15 +28,19 @@ void loop() {
 		return;
 	}
 
+ // Create a string to store the UID of the RFID card
+  String uidString;
 
-// Print the UID of the RFID card to the serial monitor
-  Serial.print("RFID card detected with ID: ");
+  // Loop through the bytes of the UID and append them to the string
   for (int i = 0; i < mfrc522.uid.size; i++) {
-    Serial.print(mfrc522.uid.uidByte[i], HEX);
-    Serial.print(" ");
+    uidString += String(mfrc522.uid.uidByte[i], HEX);
+    uidString += " ";
   }
-  Serial.println();
-	// Dump debug info about the card; PICC_HaltA() is automatically called.
-  //MFRC522Debug::PICC_DumpToSerial(mfrc522, Serial, &(mfrc522.uid));
-   mfrc522.PICC_HaltA();
+
+  // Halt the RFID card to prevent it from being read again
+  mfrc522.PICC_HaltA();
+
+  // Print the UID of the RFID card to the serial monitor
+  Serial.print("RFID card detected with ID: ");
+  Serial.println(uidString);
 }
